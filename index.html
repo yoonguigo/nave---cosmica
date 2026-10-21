@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nave Cósmica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game-wrapper">
+<h1>🚀 Nave Cósmica</h1>
+<div class="game-area">
+<canvas id="gameCanvas" width="500" height="500"></canvas>
+<div id="startScreen" class="screen">
+<h2>NAVE CÓSMICA</h2><p>Desvie dos meteoros e colete estrelas!</p>
+<p>← → mover | ESPAÇO atirar</p><button id="startButton">JOGAR</button>
+</div>
+<div id="gameOverScreen" class="screen hidden">
+<h2>FIM DE JOGO</h2><p id="finalScore">Pontuação: 0</p>
+<button id="restartButton">JOGAR NOVAMENTE</button>
+</div>
+</div>
+<div class="instructions">← → Mover　 |　 ESPAÇO Atirar　 |　 ENTER Pausar</div>
+</main>
+<script src="js/Teclado.js"></script>
+<script src="js/Nave.js"></script>
+<script src="js/Tiro.js"></script>
+<script src="js/Meteoro.js"></script>
+<script src="js/Estrela.js"></script>
+<script src="js/Particula.js"></script>
+<script src="js/Jogo.js"></script>
+</body>
+</html>
